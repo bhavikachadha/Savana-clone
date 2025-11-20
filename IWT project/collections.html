@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Savana Studio | Collection</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="C:\Users\asus\OneDrive\Documents\IWT project\Savana_style.css">
+
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="C:\Users\asus\OneDrive\Documents\IWT project\Savana_home.html">Home</a></li>
+    <li><a href="C:\Users\asus\OneDrive\Documents\IWT project\collections.html">Collection</a></li>
+    <li><a href="C:\Users\asus\OneDrive\Documents\IWT project\contact_us.html">Contact</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>THE SAVANA COLLECTION</h1>
+  <p>Where comfort meets elegance ✨</p>
+</header>
+
+<div class="collection">
+  <div class="card">
+    <img src="C:\Users\asus\OneDrive\Documents\IWT project\bhack_top_savana.jpg"
+ alt="Dress">
+    <div class="overlay">
+      <button class="btn">Add to Cart</button>
+      <button class="btn">View Details</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="C:\Users\asus\OneDrive\Documents\IWT project\white_dress_savana.jpg" alt="Jacket">
+    <div class="overlay">
+      <button class="btn">Add to Cart</button>
+      <button class="btn">View Details</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src= "C:\Users\asus\OneDrive\Documents\IWT project\blue_co-ord_set_savana.jpg"alt="Model">
+    <div class="overlay">
+      <button class="btn">Add to Cart</button>
+      <button class="btn">View Details</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="C:\Users\asus\OneDrive\Documents\IWT project\blue_shirt_savana.jpg"
+
+ alt="Outfit">
+    <div class="overlay">
+      <button class="btn">Add to Cart</button>
+      <button class="btn">View Details</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="C:\Users\asus\OneDrive\Documents\IWT project\5_savana.jpg" alt="Jacket">
+    <div class="overlay">
+      <button class="btn">Add to Cart</button>
+      <button class="btn">View Details</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="C:\Users\asus\OneDrive\Documents\IWT project\6_savana.jpg" alt="Jacket">
+    <div class="overlay">
+      <button class="btn">Add to Cart</button>
+      <button class="btn">View Details</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="C:\Users\asus\OneDrive\Documents\IWT project\7_savana.jpg" alt="Jacket">
+    <div class="overlay">
+      <button class="btn">Add to Cart</button>
+      <button class="btn">View Details</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="C:\Users\asus\OneDrive\Documents\IWT project\10_savana.jpg" alt="Jacket">
+    <div class="overlay">
+      <button class="btn">Add to Cart</button>
+      <button class="btn">View Details</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="C:\Users\asus\OneDrive\Documents\IWT project\8_savana.jpg" alt="Jacket">
+    <div class="overlay">
+      <button class="btn">Add to Cart</button>
+      <button class="btn">View Details</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="C:\Users\asus\OneDrive\Documents\IWT project\9_savana.jpg" alt="Jacket">
+    <div class="overlay">
+      <button class="btn">Add to Cart</button>
+      <button class="btn">View Details</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Savana Studio | All Rights Reserved.</p>
+</footer>
+
+<script>
+  const cards = document.querySelectorAll('.card');
+  window.addEventListener('scroll', () => {
+    cards.forEach(card => {
+      const rect = card.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 50) {
+        card.classList.add('visible');
+      }
+    });
+  });
+</script>
+
+</body>
+</html> -->
+ 
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collection - Savana Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom right, #fffaf5, #f5e8df);
+  font-family: 'Poppins', sans-serif;
+  color: #3a2e2e;
+}
+
+/* Navbar */
+nav {
+  background-color: #d4a373;
+  padding: 15px 0;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 40px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+  height: 90vh;
+  background: url('images/banner.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.hero-text {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+  animation: fadeUp 1s ease forwards;
+}
+.hero-btn {
+  background: #d4a373;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+.hero-btn:hover {
+  background: #b38257;
+}
+
+/* Featured section */
+.featured {
+  text-align: center;
+  padding: 50px 0;
+}
+.featured h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.featured-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Cards */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 300px;
+  height: 400px;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.card:hover img {
+  transform: scale(1.1);
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.card:hover .overlay {
+  opacity: 1;
+}
+.overlay button {
+  background: #d4a373;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.overlay button:hover {
+  background: #b38257;
+}
+
+/* Newsletter */
+.newsletter {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f1e2d3;
+  border-radius: 10px;
+  margin: 40px;
+}
+.newsletter form {
+  margin-top: 20px;
+}
+.newsletter input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+}
+.newsletter button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #d4a373;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.newsletter button:hover {
+  background-color: #b38257;
+}
+
+/* Contact Page */
+.page-header {
+  text-align: center;
+  padding: 50px 20px;
+}
+.contact-form {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #d4a373;
+  border-radius: 5px;
+}
+.contact-form button {
+  background-color: #d4a373;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact-form button:hover {
+  background-color: #b38257;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #d4a373;
+  color: white;
+  margin-top: 40px;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .featured-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="collection.html" class="active">Collection</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-header">
+    <h1>Our Collection</h1>
+    <p>Find your perfect look for every occasion ✨</p>
+  </header>
+
+  <div class="gallery">
+    <div class="card"><img src="images/look4.jpg"><div class="overlay"><button>Add to Cart</button></div></div>
+    <div class="card"><img src="images/look5.jpg"><div class="overlay"><button>Add to Cart</button></div></div>
+    <div class="card"><img src="images/look6.jpg"><div class="overlay"><button>Add to Cart</button></div></div>
+    <div class="card"><img src="images/look7.jpg"><div class="overlay"><button>Add to Cart</button></div></div>
+    <div class="card"><img src="images/look8.jpg"><div class="overlay"><button>Add to Cart</button></div></div>
+    <div class="card"><img src="images/look9.jpg"><div class="overlay"><button>Add to Cart</button></div></div>
+  </div>
+
+  <footer>
+    <p>© 2025 Savana Studio. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
+ -->
